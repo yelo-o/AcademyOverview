@@ -24,19 +24,19 @@
 	[] : 대괄호(스퀘어브래킷)
 	
 # 컴파일
+	- [cp]
+	  --class-path <path>, -classpath <path>, -cp <path>
+			Specify where to find user class files and annotation processors(클래스 파일과 주석 프로세서의 위치를 상세화)
+	  
+	- [-d]
+	  -d <directory> Specify where to place generated class files(클래스 파일을 생성할 위치를 상세화.)
+	
 	- 일반 실행
 		javac -d [컴파일러 위치] [자바 파일 위치\자바 파일]
 		
 	- 참조 실행
 		javac -d [컴파일러 위치] -cp [참조 폴더] [자바 파일 위치\자바 파일]
 
-	- [cp]
-	  --class-path <path>, -classpath <path>, -cp <path>
-			Specify where to find user class files and annotation processors(클래스 파일과 주석 프로세서의 위치를 상세화)
-	  
-			
-	- [-d]
-	  -d <directory> Specify where to place generated class files(클래스 파일을 생성할 위치를 상세화.)
 
 	- 예시 (명령프롬프트로 bin 폴더에 접근 후 javac.exe로 컴파일)
 		<일반 컴파일>
@@ -49,8 +49,8 @@
 			javac -d D:\Overview\myJAVA -cp D:\Overview\myJAVA D:\Overview\myJAVA\Product*.java
 
 # 실행
-	java -cp D:\Overview\myJAVA Product
-	
+	java -cp D:\Overview\myJAVA Product → Product 실행
+	java -cp D:\Overview\myJAVA ProductRepository → ProductRepository 실행
 	
 	
 # 순서 
