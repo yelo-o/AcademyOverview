@@ -30,6 +30,9 @@
 	[] : 대괄호(스퀘어브래킷)
 	
 # 컴파일
+컴파일 및 실행을 하려면 컴파일러(javac)가 있는 디렉토리까지 이동해야 한다. 
+cd [컴파일러 디렉토리]
+	
 	- [cp]
 	  --class-path <path>, -classpath <path>, -cp <path>
 			Specify where to find user class files and annotation processors(클래스 파일과 주석 프로세서의 위치를 상세화)
@@ -59,8 +62,10 @@
 		java -cp [실행파일 위치] [실행파일]
 
 	- 예시
-		java -cp D:\Overview\myJAVA Product → Product 실행
-		java -cp D:\Overview\myJAVA ProductRepository → ProductRepository 실행
+		→ Product 실행
+		java -cp D:\Overview\myJAVA Product 
+		→ ProductRepository 실행
+		java -cp D:\Overview\myJAVA ProductRepository 
 	
 	
 # 순서 
@@ -77,4 +82,45 @@
 			pArr[0].prodNo = "G0001";
 	→ private 변수는 다른 클래스에서 참조할 수 없다.
 
+`23.05.10(수)
+# 데이터 베이스(오라클)
+- 데이터베이스의 종류는 매우 많지만 데이터베이스를 조작하는 언어는 하나(SQL) Structured Query Language
 
+- 일반적인 프로그래밍 언어 절차
+	변수선언 → 조건문 → 변수값 대입 → 반복문에서 변수 사용
+
+- SQL 절차
+	
+	
+	
+# 네트워크 프로그래밍이란?
+	- ip
+	- port
+	- socket
+	
+	
+# SQL 프로그래밍(SQL Develpoer 사용)
+
+	--테이블 생성
+	CREATE TABLE product(
+	prod_no VARCHAR2(10) PRIMARY KEY,
+	prod_name VARCHAR2(50),
+	prod_price NUMBER(5)
+	);
+
+	--추가
+	INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0001', '냉장고', 10000);
+	INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0002', '김치냉장고', 15000);
+	INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0003', '와인냉장고', 10000);
+
+	--전체검색
+	SELECT * FROM product;
+
+	--상품번호로 검색
+	SELECT * FROM product WHERE prod_no='R0001';
+
+	--상품이름값을 변경(상품번호가 R0003인 상품의 이름을 '소주냉장고'로 변경
+	UPDATE product SET prod_name='소주냉장고' WHERE prod_no='R0003';
+
+	-상품삭제 : 상품번호가 R0002인 상품을 삭제하시오
+	DELETE product WHERE prod_no='R0002';
