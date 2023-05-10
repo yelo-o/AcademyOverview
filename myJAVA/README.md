@@ -61,11 +61,11 @@
 	- 
 	
 # 오류 
-non-static variable pArr cannot be referenced from a static context
-논스태틱 변수는 스태틱 변수를 참조할 수 없다.
+	non-static variable pArr cannot be referenced from a static context
+	논스태틱 변수는 스태틱 변수를 참조할 수 없다.
 
-error: prodNo has private access in Product
-        pArr[0].prodNo = "G0001";
-private 변수는 다른 클래스에서 참조할 수 없다.
+	error: prodNo has private access in Product
+			pArr[0].prodNo = "G0001";
+	private 변수는 다른 클래스에서 참조할 수 없다.
 
 
