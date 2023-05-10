@@ -5,7 +5,7 @@
 
 
 # 리다이렉션
-'java.sun.com'
+'java.sun.com' 을 주소창에 입력해도 다른 주소(https://www.oracle.com/technetwork/java/index.html)로 바뀜 ← 리다이렉션
 
 # 컴파일이란? 
 	java.exe
@@ -37,10 +37,10 @@
 	- [-d]
 	  -d <directory> Specify where to place generated class files(클래스 파일을 생성할 위치를 상세화.)
 	
-	- 일반 실행
+	- 일반 컴파일
 		javac -d [컴파일러 위치] [자바 파일 위치\자바 파일]
 		
-	- 참조 실행
+	- 참조 컴파일
 		javac -d [컴파일러 위치] -cp [참조 폴더] [자바 파일 위치\자바 파일]
 
 
@@ -55,8 +55,12 @@
 			javac -d D:\Overview\myJAVA -cp D:\Overview\myJAVA D:\Overview\myJAVA\Product*.java
 
 # 실행
-	java -cp D:\Overview\myJAVA Product → Product 실행
-	java -cp D:\Overview\myJAVA ProductRepository → ProductRepository 실행
+	- 실행 방법
+		java -cp [실행파일 위치] [실행파일]
+
+	- 예시
+		java -cp D:\Overview\myJAVA Product → Product 실행
+		java -cp D:\Overview\myJAVA ProductRepository → ProductRepository 실행
 	
 	
 # 순서 
