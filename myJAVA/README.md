@@ -39,12 +39,13 @@
 - [-d]
   -d <directory> Specify where to place generated class files(클래스 파일을 생성할 위치를 상세화.)
 
-	명령프롬프트로 bin 폴더에 접근 후 javac.exe로 컴파일
+- 예시 (명령프롬프트로 bin 폴더에 접근 후 javac.exe로 컴파일)
+	<일반 컴파일>
 		javac -d D:\Overview\myJAVA D:\Overview\myJAVA\Product.java
-	
+
 	<클래스 참조 1>
 		javac -d D:\Overview\myJAVA -cp D:\Overview\myJAVA D:\Overview\myJAVA\ProductRepository.java
-	
+
 	<클래스 참조 2 : Product로 시작하는 자바 파일 모두 컴파일>
 		javac -d D:\Overview\myJAVA -cp D:\Overview\myJAVA D:\Overview\myJAVA\Product*.java
 
