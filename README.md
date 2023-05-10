@@ -64,14 +64,13 @@
 
 # NullPointerException
 	- 컴파일은 되지만 실행 시에 오류가 남
-	- 
 	
 # 오류 
 	non-static variable pArr cannot be referenced from a static context
-	논스태틱 변수는 스태틱 변수를 참조할 수 없다.
+	→ 논스태틱 변수는 스태틱 변수를 참조할 수 없다.
 
 	error: prodNo has private access in Product
 			pArr[0].prodNo = "G0001";
-	private 변수는 다른 클래스에서 참조할 수 없다.
+	→ private 변수는 다른 클래스에서 참조할 수 없다.
 
 
