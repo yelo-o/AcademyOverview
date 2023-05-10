@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/yelo-o/JavaAcademy/assets/64743180/88704eaa-77ae-4558-ac7f-a1d3aacebbd5">
+</p>
+
+
 # 리다이렉션
 'java.sun.com'
 
