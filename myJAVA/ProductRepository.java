@@ -132,6 +132,7 @@ public class ProductRepository{
 		java.sql.Statement stmt = null;
 		java.sql.ResultSet rs = null;
 		Product[] pArr; // Product 타입의 배열 선언
+
 		try{
 			// Row 수 먼저 확인
 			String selectCountSQL = "SELECT count(*) FROM product"; // "row 수 확인" SQL문 변수에 저장
@@ -163,7 +164,7 @@ public class ProductRepository{
 			return pArr;
 		}catch(Exception e){
 			System.out.println("상품전체검색 실패");
-			return pArr;
+			return null;
 		}finally{
 			// 6. DB연결 닫기 -> close() 부분은 오류가 발생해도 개발자가 어쩌할 수 없는 경우가 많기 때문에 출력없이 끝냄
 			try{
