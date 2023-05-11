@@ -1,7 +1,7 @@
 public class Product{
     String prodNo; // 상품번호(멤버 변수)
-    private String prodName; // 상품이름
-    private int prodPrice; // 상품가격
+    String prodName; // 상품이름
+    int prodPrice; // 상품가격
 
     public static void main(String []args){
         System.out.println("김민규입니다");

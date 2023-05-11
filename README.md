@@ -89,10 +89,10 @@ cd [컴파일러 디렉토리]
 - 일반적인 프로그래밍 언어 절차
 	변수선언 → 조건문 → 변수값 대입 → 반복문에서 변수 사용
 
-- SQL 절차
+- SQL 절차는 위와 같은 일반적은 프로그래밍 언어의 절차를 따르지 않음
 	
 	
-# 네트워크 프로그래밍이란?
+# 네트워크 프로그래밍 용어 탐구
 	- ip
 	- port
 	- socket
@@ -100,26 +100,26 @@ cd [컴파일러 디렉토리]
 	
 # SQL 프로그래밍(SQL Develpoer 사용)
 
-	--테이블 생성
-	CREATE TABLE product(
-	prod_no VARCHAR2(10) PRIMARY KEY,
-	prod_name VARCHAR2(50),
-	prod_price NUMBER(5)
-	);
+--테이블 생성
+CREATE TABLE product(
+prod_no VARCHAR2(10) PRIMARY KEY,
+prod_name VARCHAR2(50),
+prod_price NUMBER(5)
+);
 
-	--추가
-	INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0001', '냉장고', 10000);
-	INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0002', '김치냉장고', 15000);
-	INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0003', '와인냉장고', 10000);
+--추가
+INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0001', '냉장고', 10000);
+INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0002', '김치냉장고', 15000);
+INSERT INTO product(prod_no, prod_name, prod_price) VALUES ('R0003', '와인냉장고', 10000);
 
-	--전체검색
-	SELECT * FROM product;
+--전체검색
+SELECT * FROM product;
 
-	--상품번호로 검색
-	SELECT * FROM product WHERE prod_no='R0001';
+--상품번호로 검색
+SELECT * FROM product WHERE prod_no='R0001';
 
-	--상품이름값을 변경(상품번호가 R0003인 상품의 이름을 '소주냉장고'로 변경
-	UPDATE product SET prod_name='소주냉장고' WHERE prod_no='R0003';
+--상품이름값을 변경(상품번호가 R0003인 상품의 이름을 '소주냉장고'로 변경
+UPDATE product SET prod_name='소주냉장고' WHERE prod_no='R0003';
 
-	-상품삭제 : 상품번호가 R0002인 상품을 삭제하시오
-	DELETE product WHERE prod_no='R0002';
+-상품삭제 : 상품번호가 R0002인 상품을 삭제하시오
+DELETE product WHERE prod_no='R0002';
