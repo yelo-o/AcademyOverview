@@ -99,6 +99,8 @@ cd [컴파일러 디렉토리]
 	
 	
 # SQL 프로그래밍(SQL Develpoer 사용)
+--테이블 제거
+DROP TABLE product;
 
 --테이블 생성
 CREATE TABLE product(
@@ -121,5 +123,8 @@ SELECT * FROM product WHERE prod_no='R0001';
 --상품이름값을 변경(상품번호가 R0003인 상품의 이름을 '소주냉장고'로 변경
 UPDATE product SET prod_name='소주냉장고' WHERE prod_no='R0003';
 
--상품삭제 : 상품번호가 R0002인 상품을 삭제하시오
+--상품삭제 : 상품번호가 R0002인 상품을 삭제하시오
 DELETE product WHERE prod_no='R0002';
+
+# jdbc 드라이버 연결하여 실행
+	java -cp D:\lib\ojdbc6.jar;D:\Overview\myJAVA ProductUser
