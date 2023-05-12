@@ -137,3 +137,50 @@ DELETE product WHERE prod_no='R0002';
 	- 127.0.0.1
 		* 컴퓨터 자체의 네트워크 인터페이스를 가리키는 특수한 IP 주소
 		* 127.0.0.1 주소를 사용하면, 컴퓨터 내부에서 실행되는 프로그램은 컴퓨터 자체에게 메시지를 보낼 수 있음
+		
+# 백엔드 프로그램 설치
+	1. 톰캣 프로그램 설치(https://tomcat.apache.org/download-90.cgi)
+		버전 : 버전 9.0.75
+	2. 이클립스 설치(https://www.eclipse.org/downloads/packages/)
+		버전 : Eclipse IDE for Enterprise Java and Web Developers *엔터프라이즈 버전 설치*
+
+## 톰캣 설정
+	1. .\apache-tomcat-9.0.75\lib 폴더에 ojdbc6.jar 파일 추가 (jdbc 드라이버 추가)
+	2. 환경 변수 설정 : 시스템 변수 설정에서 새 변수 생성
+		변수 이름 : JAVA_HOME
+		변수 값 : C:\Program Files\Java\jdk-11
+
+## 이클립스 설정
+	0. 환경설정 접근 방법 : Window-Preferences
+	1. 인코딩 (접근루트:General-Workspace) : UTF-8 확인 
+	2. 컴파일러 (접근루트:Java-Compiler) : jdk 버전과 맞춘다. ex) 11버전 
+	3. JRE (접근루트:Java-Installed JRE)
+		JRE home : C:\Program Files\Java\jdk-11
+		JRE name :jdk-11
+	4. 서버 설정
+		- 'No servers are available. Click this link to create a new server..' ← 클릭하여 Apache-Tomcat v9.0 Server 선택
+		디렉토리 : D:\SW\apache-tomcat-9.0.75
+	4-1. 설정한 서버가 왼쪽에 Project Explorer에 뜨게 됨
+	5. 프로젝트 추가 : 공백에 우클릭 → New-Dynmaic Web Project 
+	   프로젝트 이름 : back
+	6. Servlet 추가
+		back/Java Resources/src/main/java 폴더 클릭하여 Servlet 추가
+		Java package : com.my.control
+		Class name : ProductListServlet
+		'Next 클릭'
+		URL mappings : Edit 하여  /list 로 변경
+		'Next 클릭'
+		두 가지만 체크 : Inherited~ & doGet
+	7. 패키지 추가
+		- com.my.repository
+		- com.my.vo
+	8. 추가한 패키지에 자바 파일 가져오기
+		- com.my.repository : ProductRepository.java 복사 붙여넣기
+		- com.my.vo : Product.java 복사 붙여넣기
+	9. ProductListServlet.java 파일의 빈화면 우클릭하여 'Add and Remove' 하여 back의 위치를 Available에서 Configured로 변경
+	
+
+# `23.05.12(금) 수업 내용 요약
+<p align="center">
+  <img src="https://github.com/yelo-o/JavaAcademy/assets/64743180/a39332f5-d6b1-438a-97dc-28819e71a79e">
+</p>
