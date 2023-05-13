@@ -74,7 +74,7 @@ cd [컴파일러 디렉토리]
 # NullPointerException
 ## 1.  참조 타입의 변수가 아무것도 참조하고 있지 않을 때
 <p align="center">
-	<img src="https://github.com/yelo-o/JavaAcademy/assets/64743180/88704eaa-77ae-4558-ac7f-a1d3aacebbd5">
+	<img src="https://github.com/yelo-o/JavaAcademy/assets/64743180/3e864e7c-112b-4bdf-b23b-be247401f214">
 </p>
 
 ## 2. 객체를 참조하고 있는 변수가 아무것도 참조하고 있지 않도록 변경
