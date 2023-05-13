@@ -72,7 +72,15 @@ cd [컴파일러 디렉토리]
 	- 컴파일 → 실행
 
 # NullPointerException
-	- 컴파일은 되지만 실행 시에 오류가 남
+## 1.  참조 타입의 변수가 아무것도 참조하고 있지 않을 때
+	<p align="center">
+	  <img src="[https://github.com/yelo-o/JavaAcademy/assets/64743180/88704eaa-77ae-4558-ac7f-a1d3aacebbd5](https://github.com/yelo-o/JavaAcademy/assets/64743180/892044fc-73d1-44f2-a1cc-e44168e8236b)">
+	</p>
+## 2. 객체를 참조하고 있는 변수가 아무것도 참조하고 있지 않도록 변경
+	<p align="center">
+	  <img src="[https://github.com/yelo-o/JavaAcademy/assets/64743180/88704eaa-77ae-4558-ac7f-a1d3aacebbd5](https://github.com/yelo-o/JavaAcademy/assets/64743180/9faea64c-1f05-4f1b-847e-8756fd58584d)">
+	</p>
+	
 	
 # 오류 
 	non-static variable pArr cannot be referenced from a static context
